@@ -154,6 +154,7 @@ class BertModel(object):
       ValueError: The config is invalid or one of the input tensor shapes
         is invalid.
     """
+    import pdb;pdb.set_trace()
     config = copy.deepcopy(config)
     if not is_training:
       config.hidden_dropout_prob = 0.0
